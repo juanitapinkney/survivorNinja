@@ -10,8 +10,10 @@ h1 {
 
 main {
 
-    font-family:font 'Indie Flower', cursive;
+    font-family: font 'Indie Flower', cursive;
 }
+
+
 
 
 }
@@ -32,6 +34,7 @@ main {
     border-style: 0px;
     display: inline-block;
     border-image: 0.1 solid color:#FBFBFB;
+    width: 100px;
 }
 
 #gameButton {
@@ -89,7 +92,7 @@ main {
 
 #explosion-button {
     width: 150px;
-    background-color: #2B303A
+    background-color: #3D886E
 }
 
 #hurricane {
@@ -129,4 +132,101 @@ main {
     height: 200px;
     border-style: solid 2px;
     border-color: #F35406;
+}
+
+.hurricaneHeaderSidebar {
+    height: :40px;
+    width: 180px;
+    background-color: #F35406
+}
+
+.fireHeaderSidebar {
+    height: :40px;
+    width: 180px;
+    background-color: #EDCA27
+}
+
+.tornedoHeaderSidebar {
+    height: :40px;
+    width: 180px;
+    background-color: #B62482
+}
+
+.explosionHeaderSidebar {
+    height: :40px;
+    width: 180px;
+    background-color: #3D886E
+}
+
+#hero1 {
+    width: 100px;
+    height:115px;
+    display: inline-block;
+}
+
+#hero2 {
+    width: 100px;
+    height:115px;
+    display: inline-block;
+}
+
+#hero3 {
+    width: 100px;
+    display: inline-block;
+}
+
+#hero4 {
+    width: 100px;
+    height:115px;
+    display: inline-block;
+}
+
+#hero5 {
+    width: 100px;
+    height:115px;
+    display: inline-block;
+}
+
+#inlineCheckbox1 {
+
+
+}
+
+#inlineCheckbox2 {
+
+}
+
+#inlineCheckbox3 {
+
+}
+
+#inlineCheckbox4 {
+
+}
+
+#inlineCheckbox5 {
+
+}
+
+#avatarSelector {
+	display: inline-block;
+ background-color: #FBFBFB
+
+}
+
+.form-check{
+	display: inline-block;
+}
+
+.gameBackground {
+	width:600px;
+	height: 600px
+}
+
+.carousel{
+	margin-left: 300px;
+	margin-top: -730px;
+	margin-right: -150px;
+
+
 }
