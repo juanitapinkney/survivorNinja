@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS survivorNinja;
+
+CREATE DATABASE survivorNinja;

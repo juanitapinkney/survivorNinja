@@ -136,25 +136,25 @@ main {
 
 .hurricaneHeaderSidebar {
     height: :40px;
-    width: 180px;
+    width: 200px;
     background-color: #F35406
 }
 
 .fireHeaderSidebar {
     height: :40px;
-    width: 180px;
+    width: 200px;
     background-color: #EDCA27
 }
 
 .tornedoHeaderSidebar {
     height: :40px;
-    width: 180px;
+    width: 200px;
     background-color: #B62482
 }
 
 .explosionHeaderSidebar {
     height: :40px;
-    width: 180px;
+    width: 200px;
     background-color: #3D886E
 }
 
@@ -224,9 +224,10 @@ main {
 }
 
 .carousel{
-	margin-left: 300px;
+	margin-left: 270px;
 	margin-top: -730px;
 	margin-right: -150px;
+	width: 600px;
 
 
 }
