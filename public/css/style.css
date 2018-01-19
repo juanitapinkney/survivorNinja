@@ -1,0 +1,132 @@
+body {
+
+    background-color: #04ADEA;
+}
+
+h1 {
+    font-color: #AC2830;
+    font-family: 'Joti One', cursive;
+}
+
+main {
+
+    font-family:font 'Indie Flower', cursive;
+}
+
+
+}
+
+.jumbotron {
+    height: 350px;
+    background-color: #FBFBFB;
+    background-image: url(../images/NinjaIcon.jpg);
+    margin-bottom: 0px;
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#logo {
+
+    border-color: #FBFBFB;
+    border-style: 0px;
+    display: inline-block;
+    border-image: 0.1 solid color:#FBFBFB;
+}
+
+#gameButton {
+    height: 50px;
+    width: 200px;
+    background-color: #3D886E
+}
+
+#inputName {
+    border-style: solid 2px;
+    border-color: #F35406;
+    height: 50px;
+    width: 950px;
+}
+
+#inputEmail {
+    border-style: solid 2px;
+    border-color: #F35406;
+    height: 50px;
+    width: 950px;
+}
+
+#inputCity {
+    border-style: solid 2px;
+    border-color: #F35406;
+    height: 50px;
+}
+
+#inputState {
+    border-style: solid 2px;
+    border-color: #F35406;
+    height: 50px;
+}
+
+#submitButton {
+    height: 50px;
+    width: 200px;
+    background-color: #B62482
+}
+
+#hurricane-button {
+    width: 150px;
+    background-color: #F35406
+}
+
+#fire-button {
+    width: 150px;
+    background-color: #EDCA27
+}
+
+#tornedo-button {
+    width: 150px;
+    background-color: #B62482
+}
+
+#explosion-button {
+    width: 150px;
+    background-color: #2B303A
+}
+
+#hurricane {
+    width: 400px;
+}
+
+.card-body {
+    background-color: #FBFBFB;
+    width: 250px;
+    border-style: solid 2px;
+    border-color: #F35406;
+}
+
+.card-body1 {
+    background-color: #FBFBFB;
+    height: 200px;
+    border-style: solid 2px;
+    border-color: #F35406;
+}
+
+.card-body2 {
+    background-color: #FBFBFB;
+    height: 200px;
+    border-style: solid 2px;
+    border-color: #F35406;
+}
+
+.card-body3 {
+    background-color: #FBFBFB;
+    height: 200px;
+    border-style: solid 2px;
+    border-color: #F35406;
+}
+
+.card-body4 {
+    background-color: #FBFBFB;
+    height: 200px;
+    border-style: solid 2px;
+    border-color: #F35406;
+}
