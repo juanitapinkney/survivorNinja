@@ -1,12 +1,26 @@
 module.exports = function(sequelize, DataTypes) {
   var Question = sequelize.define("Question", {
-    username: DataTypes.STRING,
-    city:DataTypes.STRING
-    states:DataTypes.STRING
-	    allowNull: true,
-	    defaultValue: null,
-    avatar:DataTypes.STRING
-  });
+
+    username: {
+	     type: DataTypes.STRING,
+	     allowNull: false,
+    },
+
+    city: {
+		type: DataTypes.STRING,
+		allowNull: false,
+    },
+
+    state: {
+    	type: DataTypes.STRING,
+    	allowNull: false,
+    },
+
+    avatar: {
+    	type: DataTypes.STRING,
+    	allowNull: false
+    }
+});
 
   return Question;
 };
