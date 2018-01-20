@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/yeti17/survivorNinja/issues"
   },
-  "homepage": "https://github.com/yeti17/survivorNinja#readme"
+  "homepage": "https://github.com/yeti17/survivorNinja#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
