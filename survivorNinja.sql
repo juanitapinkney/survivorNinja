@@ -1,4 +1,2 @@
-
 CREATE DATABASE survivorNinja;
-DROP DATABASE survivorNinja
-
+DROP DATABASE survivorNinja;
