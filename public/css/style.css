@@ -8,20 +8,26 @@ h1 {
     font-family: 'Joti One', cursive;
 }
 
+
+.navbar-brand  {
+  margin-top: -25px;
+
+}
+
 main {
 
     font-family: font 'Indie Flower', cursive;
 }
 
-
-
+nav {
+    background-color: #04ADEA;
 
 }
 
 .jumbotron {
-    height: 350px;
-    background-color: #FBFBFB;
-    background-image: url(../images/NinjaIcon.jpg);
+    height: 400px;
+    /*background-color: #FBFBFB;*/
+   /* background-image: url(../images/NinjaIcon.jpg);*/
     margin-bottom: 0px;
     background-position: 0% 25%;
     background-size: cover;
@@ -40,7 +46,7 @@ main {
 #gameButton {
     height: 50px;
     width: 200px;
-    background-color: #3D886E
+    background-color: #B62482
 }
 
 #inputName {
@@ -75,23 +81,35 @@ main {
     background-color: #B62482
 }
 
-#hurricane-button {
+.menuButton {
+
+    display: inline-block;
     width: 150px;
+
+}
+
+#hurricaneButton{
+    width:;
     background-color: #F35406
+    
 }
 
-#fire-button {
-    width: 150px;
+
+}
+
+#menuButton2 {
+    width: ;
     background-color: #EDCA27
+    
 }
 
-#tornedo-button {
-    width: 150px;
+#menuButton3 {
+    width: ;
     background-color: #B62482
 }
 
-#explosion-button {
-    width: 150px;
+#menuButton4 {
+    width: ;
     background-color: #3D886E
 }
 
@@ -136,25 +154,25 @@ main {
 
 .hurricaneHeaderSidebar {
     height: :40px;
-    width: 200px;
+    width: 250px;
     background-color: #F35406
 }
 
 .fireHeaderSidebar {
     height: :40px;
-    width: 200px;
+    width: 250px;
     background-color: #EDCA27
 }
 
 .tornedoHeaderSidebar {
     height: :40px;
-    width: 200px;
+    width: 250px;
     background-color: #B62482
 }
 
 .explosionHeaderSidebar {
     height: :40px;
-    width: 200px;
+    width: 250px;
     background-color: #3D886E
 }
 
@@ -187,24 +205,28 @@ main {
     display: inline-block;
 }
 
-#inlineCheckbox1 {
-
-
-}
-
-#inlineCheckbox2 {
+.card-body1 {
+    width: 250px
 
 }
 
-#inlineCheckbox3 {
+.card-body2 {
+    width: 250px
 
 }
 
-#inlineCheckbox4 {
+.card-body3 {
+    width: 250px
 
 }
 
-#inlineCheckbox5 {
+.card-body4 {
+    width: 250px
+
+}
+
+.card-body5 {
+    width: 250px
 
 }
 
@@ -224,10 +246,93 @@ main {
 }
 
 .carousel{
-	margin-left: 270px;
+	margin-left: 285px;
 	margin-top: -730px;
 	margin-right: -150px;
-	width: 600px;
+	width: 590px;
+    background-color: #FBFBFB;
 
 
+}
+
+.card-deck {
+    margin-left: 910px;
+    margin-top: -730px;
+    width:350px;
+}
+
+.card-img-top {
+    width: 50px;
+}
+
+.card-title {
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.card-card-body {
+    background-color:#C0C0C0
+}
+
+.card-text {
+
+    height: 50px;
+}
+
+.custom-radio{
+    margin-left: 400px;
+    margin-top: -90px;
+}
+
+#Question1 {
+    margin-left:295px;
+    margin-top: -100px;
+}
+
+#Question2 {
+    margin-left:295px;
+    margin-top: -430px;
+
+}
+
+#Question3 {
+    margin-left:295px;
+    margin-top: -360px;
+
+}
+
+#Question4 {
+    margin-left:295px;
+  margin-top: -290px;
+
+}
+
+#Question5 {
+    margin-left:295px;
+   margin-top: -220px;
+
+}
+
+#footerCard {
+    width: 590px;
+     margin-left:300px;
+      margin-top: -385px;
+      background-color: #FBFBFB;
+      height: 378px;
+
+}
+
+.card-img {
+    width: 200px;
+  margin-left:180px;px;
+}
+
+.userScore {
+     height: 200px;
+}
+
+.modalImage {
+    width: 150px;
+    margin-left:100px
 }
