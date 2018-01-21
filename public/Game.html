@@ -15,14 +15,11 @@
 </head>
 
 <body>
-            <div class="container">
+<div class="container">
         <nav class="navbar navbar-default navbar-fixed-top">
             <a class="navbar-brand" href="#"></a>
             <!-- <img src="./images/NinjaIcon.jpg" class="d-inline-block align-top" alt="logo" id="logo"> -->
-            <div class="navbar-brand pull-left"><strong><img></strong></div>
-              <img src="./images" </img>
-              
-              <h1>Survivor </h1></strong></div>
+            <div a class="navbar-brand pull-left"><strong><h1>Survivor Ninja</h1></strong></div>
             <div class="navbar-collapse collapse navbar-responsive-collapse">
                 <ul class="nav navbar-nav pull-right">
                     <li class="active"></li>
@@ -58,23 +55,23 @@
             <br>
             <div class="avatarSelector">
             <div class="form-check form-check-inline" >
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="avataroption1">
+                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="avatarButton" value="avataroption1">
                 <label class="form-check-label" for="inlineCheckbox1"><img src="./images/hero1.png" class="d-inline-block align-top" id="hero1"></label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="avataroption2">
+                <input class="form-check-input" type="radio" id="inlineCheckbox2" name="avatarButton" value="avataroption2">
                 <label class="form-check-label" for="inlineCheckbox2"><img src="./images/Hero2.png" class="d-inline-block align-top" id="hero2"></label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="avataroption3">
+                <input class="form-check-input" type="radio" id="inlineCheckbox3" name="avatarButton" value="avataroption3">
                 <label class="form-check-label" for="inlineCheckbox3"><img src="./images/hero3.png" class="d-inline-block align-top" id="hero3"></label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="avataroption4">
+                <input class="form-check-input" type="radio" id="inlineCheckbox4" name="avatarButton" value="avataroption4">
                 <label class="form-check-label" for="inlineCheckbox3"><img src="./images/hero4.png" class="d-inline-block align-top" id="hero4"></label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option3" disabled>
+                <input class="form-check-input" type="radio" id="inlineCheckbox5" name="avatarButton" value="option3" >
                 <label class="form-check-label" for="inlineCheckbox3"><img src="./images/hero5.png" class="d-inline-block align-top" id="hero5"></label>
             </div>
             </div>
@@ -355,42 +352,10 @@
               <option>5. A hurricane escape route is a route you create yourself when there is a hurricane.</option>
             </select>
           </div>
-              
-<div class="modal fade" id="Level2" tabindex="-2" role="dialog" aria-labelledby="Level2" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="Level2">Level 2: You have 1 day left</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
+             
+     <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">My Score</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="Level3" tabindex="-3" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="level3ModalLongTitle">Level 3: It's only a matter of hours</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">My Score</button>
+        <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="My Score" data-content="Ninja Stars earned: ">Score</button>
       </div>
     </div>
   </div>
