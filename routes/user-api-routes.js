@@ -5,8 +5,8 @@ module.exports = function(app) {
   app.post("/api/index", function(req, res) {
     db.User.create({
       userName: req.body.userName,
-      city: req.body.city,
-      state: req.body.state,
+      userCity: req.body.city,
+      userState: req.body.state,
       avatar: req.body.avatar
       })
       .then(function(dbUser) {
