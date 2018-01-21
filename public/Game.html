@@ -162,20 +162,18 @@
 
 <div class="card-deck">
   <div class="card">
-    <img class="card-img-top" src="./images/NinjaStarBlue.jpeg">
     <img class="card-img-top" src="./images/NinjaStarRed.jpeg">
     <img class="card-img-top" src="./images/NinjaStarGreen.jpeg">
     <img class="card-img-top" src="./images/NinjaStarYellow.jpeg">
-     <img class="card-img-top" src="./images/NinjaStarGrey.jpg">
+    
     <div class="card-body">
       <h5 class="card-title"><strong><h4>Level 1</strong></h4>
-      <p class="card-text"> Earn 5 Ninja Stars.</p>
+      <p class="card-text"> Earn 3 Ninja Stars</p>
       <h5 class="card-title"><strong><h4>Level 2</strong></h4>
-      <p class="card-text"> Earn 10 Ninja Stars.</p>
+      <p class="card-text"> Earn 3 Ninja Stars.</p>
       <h5 class="card-title"><strong><h4>Level 3</strong></h4>
-      <p class="card-text"> Earn 20 Ninja Stars.</p>
+      <p class="card-text"> Earn 3 Ninja Stars.</p>
     </div>
-    
   </div>
   <div class="card">
         <div class="card-body">
@@ -214,7 +212,7 @@
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Level1">
     <h4>Level 1</h4>
     </button>
-
+    
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Level2">
     <h4>Level 2</h4>
     </button>
@@ -250,10 +248,9 @@
               <option>1. A hurricane is losts of sand blowing in the wind.</option>
               <option>2. A hurricane is a muddy puddle of water.</option>
               <option>3. A hurricane is a big storm with strong winds and moves very fast.</option>
-            
-            </select>
+             </select>
         </div>
-       
+       <br>
         <div class="form-group">
             <label for="exampleFormControlSelect1"><h4>Question 2: When is Hurricane Season?</h4></label>
             <select class="form-control"  style="font-size: 20px;" id="exampleFormControlSelect2">
@@ -263,9 +260,8 @@
               <option>3. The months of June through November</option>
             </select>
           </div>
-       
-
-         <div class="form-group">
+          <br>
+          <div class="form-group">
             <label for="exampleFormControlSelect1"><h4>Question 3: How does a hurricane form?</h4></label>
             <select class="form-control"  style="font-size: 20px;" id="exampleFormControlSelect3">
               <option>Choose your answer</option>
@@ -275,136 +271,57 @@
             </select>
           </div>
 
-         <!--  Hurricanes are formed through heat and energy over really warm oceans. -->
-
-
-                      <!-- Submit Button -->
-        <div class="container">              
-            <div class="form-group col-lg-4">
-                <button type="submit" class="btn btn-primary btn-lg" id="submit">Submit</button>
-            </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">My Score</button>
         </div>
-
-
-
-          <!-- Questions for level 2. -->
-
-<!--           <div class="form-group">
-            <label for="exampleFormControlSelect1"><h4>Question 4: Who does the hurricane affect?</h4></label>
-            <select class="form-control" id="exampleFormControlSelect4">
-              <option>Choose your answer</option>
-              <option>1. Trees </option>
-              <option>2. Schools </option>
-              <option>3. Home </option>
-              <option>4. Pets </option>
-              <option>5. All of the above</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="exampleFormControlSelect1"><h4>Question 5: What kind of damages can they cause?</h4></label>
-            <select class="form-control" id="exampleFormControlSelect5">
-              <option>Choose your answer</option>
-              <option>1. Flooding</option>
-              <option>2. Flying debris</option>
-              <option>3. Torrential rain</option>
-              <option>4. Storm surge</option>
-              <option>5. All of the above</option>
-
-
-            </select>
-          </div> -->
-        
-        <!-- Questions for level 3. -->
-      <!--     <div class="form-group">
-            <label for="exampleFormControlSelect1"><h4>Question 6: What supplies will I need?</h4></label>
-            <select class="form-control" id="exampleFormControlSelect6">
-              <option>Choose your answer</option>
-              <option>1. All my favorite toys.</option>
-              <option>2. My Toothbrush and change of clothes.</option>
-              <option>3. I will need answers 2 and 4 in my emergency supply kit. </option>
-              <option>4. Food and Water.</option>
-              <option>5. I will need my bicycle to get away.</option>
-            </select>
-
-          </div>
-
-          <div class="form-group">
-            <label for="exampleFormControlSelect1"><h4> Question 7: How do we know where to go?</h4></label>
-            <select class="form-control" id="exampleFormControlSelect7">
-              
-              <option>Choose your answer</option>
-              <option>1. Listening to TV and Radio for regular updates.</option>
-              <option>2. Listening to Parents.</option>
-              <option>3. I think I'm going to watch TV for latest information and also follow my parents direction.</option>
-              <option>4. The best thing is to stay home no matter what.</option>
-              <option>5.  We really want know where to go.</option>
-            </select>
-            
-          
-          </div>
-
-          <div class="form-group">
-            <label for="exampleFormControlSelect1"><h4> Question 8: What are hurricane escape routes?</h4></label>
-            <select class="form-control" id="exampleFormControlSelect8">
-              <option>Choose your answer</option>
-              <option>1. A hurricane escape route is the way to grandma's house.</option>
-              <option>2. A hurricane escape route are highway or roads in the US that is a specified route for hurricane evacuation.</option>
-              <option>3.A hurricane escape route is highway or road in my city.</option>
-              <option>4. A hurricane escape route is the way to my house.</option>
-              <option>5. A hurricane escape route is a route you create yourself when there is a hurricane.</option>
-            </select>
-          </div> -->
-
-          
-
-              
-<div class="modal fade" id="Level2" tabindex="-2" role="dialog" aria-labelledby="Level2" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="Level2">Level 2: It's best to be prepared.</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">My Score</button>
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal fade" id="Level3" tabindex="-3" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="level3ModalLongTitle">Level 3: It's only a matter of hours</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">My Score</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-          
-            <script src="https://code.jquery.com/jquery.js"></script>
-        
-
+<script src="https://code.jquery.com/jquery.js"></script>
 </body>
 </html>
+
+<!-- LEVEL 2 -->
+<!-- <div class="form-group">
+<label for="exampleFormControlSelect1"><h4>Question 6: What supplies will I need?</h4></label>
+<select class="form-control" id="exampleFormControlSelect6">
+<option>Choose your answer</option>
+<option>1. All my favorite toys.</option>
+<option>2. My Toothbrush and change of clothes.</option>
+<option>3. I will need answers 2 and 4 in my emergency supply kit. </option>
+<option>4. Food and Water.</option>
+<option>5. I will need my bicycle to get away.</option>
+</select>
+</div> -->
+
+<!--  <div class="form-group">
+<label for="exampleFormControlSelect1"><h4> Question 7: How do we know where to go?</h4></label>
+<select class="form-control" id="exampleFormControlSelect7">
+
+<option>Choose your answer</option>
+<option>1. Listening to TV and Radio for regular updates.</option>
+<option>2. Listening to Parents.</option>
+<option>3. I think I'm going to watch TV for latest information and also follow my parents direction.</option>
+<option>4. The best thing is to stay home no matter what.</option>
+<option>5.  We really want know where to go.</option>
+</select>
+-->
+<!--    </div> -->
+<!--  <div class="form-group">
+<label for="exampleFormControlSelect1"><h4> Question 8: What are hurricane escape routes?</h4></label>
+<select class="form-control" id="exampleFormControlSelect8">
+<option>Choose your answer</option>
+<option>1. A hurricane escape route is the way to grandma's house.</option>
+<option>2. A hurricane escape route are highway or roads in the US that is a specified route for hurricane evacuation.</option>
+<option>3.A hurricane escape route is highway or road in my city.</option>
+<option>4. A hurricane escape route is the way to my house.</option>
+<option>5. A hurricane escape route is a route you create yourself when there is a hurricane.</option>
+</select>
+</div> -->
+
+
+
+
