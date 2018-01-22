@@ -7,32 +7,46 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var exphbs = require("express-handlebars");
-var passport = require("passport-local");
-var strategy = require("passport-local").Strategy;
-// var setup = require("./config/setup");
+var passport = require("passport");
+var Strategy = require("passport-local").Strategy;
+var setup = require("./config/setup");
 var User =require("./models").user;
 var session = require("express-session");
 
-// passport.use(new Strategy ({
-// 	name: "userName"
-//  password:"userPassword"{
-// 	}, function(userName, userCity, userState, cb) {
-// 		User.findAll({
-// 			where: {
-// 				userName:name
-				// userPassword:password
-// 			}
-// 		})then(function(user){
-// 			console.log(user)
+// Sets up the Passport
+// =============================================================
 
-// 		})
-// 	}
+// passport.use(new Strategy({ 
+//       usernameField: "userName"
+//       pa
+//      }, function(name, password, cb) {
+//      	User.findOne({
+//      		where: {
+//      			userName: name
+//      		}
+//      	}).then(function(dbUser) {
+//         res.json(dbUser);
+//         console.log(user);
+//         if (user) {
+//           return cb(null, false);
+//         } else{
+//           return cb(null, false);
+//         }
+//         }).catch(function(err){
+//           console.log("error");
+//           return cb(err)
+//         })
+//     })); 
+
+// passport.sequelizeUser(function(user, cb){
+//   cb(null, user.id);
+
 // });
 
 // Sets up the Express App
 // =============================================================
 var app = express();
-var PORT = process.env.PORT || 3306;
+var PORT = process.env.PORT || 8080;
 
 
 // Requiring our models for syncing
@@ -50,6 +64,13 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Static directory
 app.use(express.static("public"));
 
+// // Setup Session
+// app.use(({
+//   setup:setup.secret,
+//   proxy:true,
+//   resave:false
+
+// }));
 
 // Routes
 var path = require("path");
