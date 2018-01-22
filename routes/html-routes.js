@@ -5,6 +5,9 @@
 // Dependencies
 // =============================================================
 var path = require("path");
+var path = require ("express").Router();
+var User = require("../models").user;
+var passport = require("passport");
 
 // Routes
 // =============================================================

@@ -1,33 +1,24 @@
-// module.exports = function(sequelize, DataTypes) {
-//   var Question = sequelize.define("Question", {
+module.exports = function(sequelize, DataTypes) {
+  var Question = sequelize.define("Question", {
 
-//     id: {
-//       type: Sequelize.INTEGER,
-//       primaryKey: true,
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
     
-//     },
+    },
 
-//     quiz: {
-//       type: DataTypes.STRING,
-//       allowNull: false,
-//     },
+    quiz: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
 
-//     answer: {
-//       type: DataTypes.INTEGER,
-//       allowNull: false,
-//     },
+    answer: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    }
 
-//     avatar: {
-//       type: Sequelize.STRING,
-//       allowNull: false,
-//     },
+  });
 
-//     // score: {
-//     //   type: Sequelize.INTEGER
-//     //   allowNull: false,
-//     // }
-// });
+  return Question;
 
-//   return Question;
-
-// };
+};

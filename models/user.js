@@ -1,51 +1,46 @@
 module.exports = function(sequelize, DataTypes) {
-  var User = sequelize.define("User", {
+  var User = sequelize.define("user", {
 
   id: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
       primaryKey: true,
     
-    }
+    },
 
     userName: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false,
     },
 
+    userPassword: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+
+
     userCity: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
 
     userState: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false
-    }
+    },
 
     avatar: {
-      type: Sequelize.STRING,
-      allowNull: false
-    }
+      type: DataTypes.STRING,
+      allowNull: true
+    },
 
     score: {
-      type: Sequelize.INTEGER
-      allowNull: false
-      defaultValue: 0,
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      defaultValue: 0
     }
 });
 
-  User.sync({force: true}).then(() => {
-  // Table created
-  return User.create({
-    userName: "",
-    userCity: "",
-    userState: "",
-    avatar: "",
-    score:"",
-
-  })
-
-});
+  return User;
 
 };
 

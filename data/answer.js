@@ -7,10 +7,10 @@ var scoreArray = [
         userState: '',
         avatar: '',
         scores: [
-            3,
-            3,
-            2,
+            "",
+            "",
+            "",
         ]
     },
 
-module.exports = friendsArray
+module.exports = scoreArray
