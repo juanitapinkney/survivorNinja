@@ -1,32 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
-  var User = sequelize.define("user", {
+  var User = sequelize.define("User", {
 
-//     name: DataTypes.STRING,
-//     city: DataTypes.STRING,
-//     state: DataTypes.STRING,
-//     avatar: DataTypes.TEXT,
-//     score: DataTypes.INTEGER
-
-//   });
-//   return User;
-// };
-
-//   User.sync({force: true}).then(() => {
-//   // Table created
-//   return user.create({
-//     userName: "",
-//     userCity: "",
-//     userState: "",
-//     avatar: "",
-//     score:"",
-
-//   })
-
-  id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-    
-    },
 
     userName: {
       type: DataTypes.STRING,
@@ -40,7 +14,7 @@ module.exports = function(sequelize, DataTypes) {
 
 
     userCity: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
     },
 
@@ -59,6 +33,8 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true,
       defaultValue: 0
     }
+}, {
+  timestamps: false
 });
 
   return User;

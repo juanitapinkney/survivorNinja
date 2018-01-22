@@ -6,7 +6,7 @@ $(document).ready(function() {
 
   // Adding event listeners for deleting, editing, and adding todos
   $(document).on("click", "button.avatarButton", insertAvatar);
-  $(document).on("click", "button.gameButton" insertUser);
+  $(document).on("click", "button.gameButton", insertUser);
   $(document).on("click", "button.userScore", insertScore);
   
   // Getting users from database when page loads

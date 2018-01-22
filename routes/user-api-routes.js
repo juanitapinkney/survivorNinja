@@ -14,6 +14,14 @@ module.exports = function(app) {
         })
       });
 
+  app.put("/api/users/:id", function(req, res) {
+    db.User.update(req.body, {
+      where: {
+        id: req.params.id
+      }
+    })
+  });
+
   app.put("/api/game", function(req, res) {
     db.User.update(req.body,
       {

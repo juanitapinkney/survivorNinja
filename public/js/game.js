@@ -1,14 +1,50 @@
+// *******   DELETE ME BLOCK
+var userId = 1;
+// *******
+
 $(document).ready(function() {
  
-$(".avatarSelector").on("click", "input" , "label" , function(event) {
-console.log(event.target);
+	$(".avatarSelector").on("click", "input" , "label" , function(event) {
 
-var avatar = event.target
-var useravatar = $( avatar ).data( "useravatar" );
-console.log(useravatar);
-})
+		var avatar = event.target
+		var useravatar = $( avatar ).data( "useravatar" );
+
+		$.ajax("/api/users/" + userId, {
+			method:"PUT", 
+			data: {
+				avatar: useravatar
+			}
+		}).done(function ( data ) {
+			console.log( "User updated." )
+		});
+	});
 
 });
+
+
+// function correctAnswer() {
+
+// var correctAnswerArray = { 3, 3, 2 }
+
+// var userScore = {},
+
+//         for (i = 0, i < correctAnswerArray; i++) {}
+
+//           if userScore() = correctAnswer()
+
+//             $.post('/api/game', score)
+//             .done(function(data) {
+//                 console.log('score = ' + JSON.stringify(data));
+
+
+//                 // Show the score: 
+//                 $('#userScore').html(data.score);
+                
+//                 // $('#modal1').modal('open');
+
+// }
+
+   
 
 //  jquery data method to get out the data from the event target 
 //  store it in the sql database ...
@@ -91,29 +127,7 @@ console.log(useravatar);
 
 // };
 
-// function correctAnswer() {
-
-//     var correctAnswerArray = { 3, 3, 2 }
-
-//     var userScore = {},
-
-//         for (i = 0, i < correctAnswerArray; i++) {}
-
-//           if userScore() = correctAnswer()
-
-//             $.post('/api/game', score)
-//             .done(function(data) {
-//                 console.log('score = ' + JSON.stringify(data));
-
-
-//                 // Show the score: 
-//                 $('#userScore').html(data.score);
-                
-//                 // $('#modal1').modal('open');
-
-//       }
-
-   
+// 
 
 //    / Variables
 // // ______________________________________________________________________________________________________________________________________-
