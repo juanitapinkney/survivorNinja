@@ -10,7 +10,7 @@ $(document).ready(function() {
   var newUser = {
     userName: $("#userName").val().trim(),
     userCity: $("#userCity").val().trim(),
-    userState: $("#userState").val().trim(),
+    userState: $("#userState").val().trim();
     
   };
 

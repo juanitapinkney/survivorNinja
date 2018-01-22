@@ -10,7 +10,7 @@ var bodyParser = require("body-parser");
 // Sets up the Express App
 // =============================================================
 var app = express();
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3306;
 
 
 // Requiring our models for syncing
@@ -26,12 +26,14 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 app.use(express.static("public"));
 
 // Routes
+var path = require("path");
+
 // =============================================================
 require("./routes/question-api-routes.js")(app);
-require("./user-api-routes")(app)
+require("./routes/user-api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 
-// Syncing our sequelize models and then starting our Express app
+// Syncing our user models and then starting our Express app
 // =============================================================
 db.sequelize.sync({ force: true }).then(function() {
   app.listen(PORT, function() {

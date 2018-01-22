@@ -13,4 +13,4 @@ var scoreArray = [
         ]
     },
 
-module.exports = friendsArray
+module.exports = scoreArray
