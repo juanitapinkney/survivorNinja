@@ -6,6 +6,28 @@
 // =============================================================
 var express = require("express");
 var bodyParser = require("body-parser");
+var exphbs = require("express-handlebars");
+var passport = require("passport-local");
+var strategy = require("passport-local").Strategy;
+// var setup = require("./config/setup");
+var User =require("./models").user;
+var session = require("express-session");
+
+// passport.use(new Strategy ({
+// 	name: "userName"
+//  password:"userPassword"{
+// 	}, function(userName, userCity, userState, cb) {
+// 		User.findAll({
+// 			where: {
+// 				userName:name
+				// userPassword:password
+// 			}
+// 		})then(function(user){
+// 			console.log(user)
+
+// 		})
+// 	}
+// });
 
 // Sets up the Express App
 // =============================================================
@@ -16,6 +38,9 @@ var PORT = process.env.PORT || 3306;
 // Requiring our models for syncing
 var db = require("./models");
 
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
+
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -25,15 +50,24 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Static directory
 app.use(express.static("public"));
 
+
 // Routes
 var path = require("path");
 
 // =============================================================
 require("./routes/question-api-routes.js")(app);
+<<<<<<< HEAD
 require("./routes/user-api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 
 // Syncing our user models and then starting our Express app
+=======
+require("./routes/user-api-routes")(app)
+require("./routes/html-routes.js")(app);
+
+
+// Syncing our sequelize models and then starting our Express app
+>>>>>>> e2f1a7ba28524f8a90f04f76812d4fe2218d8e50
 // =============================================================
 db.sequelize.sync({ force: true }).then(function() {
   app.listen(PORT, function() {

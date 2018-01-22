@@ -7,9 +7,9 @@ var scoreArray = [
         userState: '',
         avatar: '',
         scores: [
-            3,
-            3,
-            2,
+            "",
+            "",
+            "",
         ]
     },
 
