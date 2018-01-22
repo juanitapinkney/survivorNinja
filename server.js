@@ -9,39 +9,12 @@ var bodyParser = require("body-parser");
 var exphbs = require("express-handlebars");
 var passport = require("passport");
 var Strategy = require("passport-local").Strategy;
-var setup = require("./config/setup");
 var User =require("./models").user;
 var session = require("express-session");
+var env = require('dotenv').load();
 
-// Sets up the Passport
-// =============================================================
+var bCrypt = require('bcrypt-nodejs');
 
-// passport.use(new Strategy({ 
-//       usernameField: "userName"
-//       pa
-//      }, function(name, password, cb) {
-//      	User.findOne({
-//      		where: {
-//      			userName: name
-//      		}
-//      	}).then(function(dbUser) {
-//         res.json(dbUser);
-//         console.log(user);
-//         if (user) {
-//           return cb(null, false);
-//         } else{
-//           return cb(null, false);
-//         }
-//         }).catch(function(err){
-//           console.log("error");
-//           return cb(err)
-//         })
-//     })); 
-
-// passport.sequelizeUser(function(user, cb){
-//   cb(null, user.id);
-
-// });
 
 // Sets up the Express App
 // =============================================================
@@ -53,7 +26,10 @@ var PORT = process.env.PORT || 8080;
 var db = require("./models");
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.engine('hbs', exphbs({index: '.index'}));
 app.set("view engine", "handlebars");
+app.set('views', './app/views')
+
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
@@ -61,27 +37,51 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
+// For Passport
+ 
+app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
+app.use(passport.initialize()); 
+app.use(passport.session()); // persistent login sessions
+
+ 
+db.sequelize.sync().then(function() {
+ 
+    console.log('Nice! Database looks fine')
+ 
+ 
+}).catch(function(err) {
+ 
+    console.log(err, "Something went wrong with the Database Update!")
+ 
+});
+ 
+ 
+app.listen(5000, function(err) {
+ 
+    if (!err)
+ 
+        console.log("Site is live");
+         
+    else console.log(err)
+ 
+});
+
 // Static directory
 app.use(express.static("public"));
-
-// // Setup Session
-// app.use(({
-//   setup:setup.secret,
-//   proxy:true,
-//   resave:false
-
-// }));
 
 // Routes
 var path = require("path");
 
 // Syncing our user models and then starting our Express app
 // =============================================================
+var authRoute = require('./routes/auth-api-routes.js')(app);
+require('./app/routes/auth.js')(app);
 require("./routes/question-api-routes.js")(app);
 require("./routes/user-api-routes.js")(app);
 require("./routes/html-routes.js")(app);
-
-
+require("./app/models")(app);
+require('./app/config/passport/passport.js')(passport, models.user);
+require('./app/routes/auth.js')(app,passport);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
