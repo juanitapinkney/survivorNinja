@@ -54,20 +54,15 @@ app.use(express.static("public"));
 // Routes
 var path = require("path");
 
+// Syncing our user models and then starting our Express app
 // =============================================================
 require("./routes/question-api-routes.js")(app);
-<<<<<<< HEAD
 require("./routes/user-api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 
-// Syncing our user models and then starting our Express app
-=======
-require("./routes/user-api-routes")(app)
-require("./routes/html-routes.js")(app);
 
 
 // Syncing our sequelize models and then starting our Express app
->>>>>>> e2f1a7ba28524f8a90f04f76812d4fe2218d8e50
 // =============================================================
 db.sequelize.sync({ force: true }).then(function() {
   app.listen(PORT, function() {

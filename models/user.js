@@ -1,16 +1,15 @@
 module.exports = function(sequelize, DataTypes) {
   var User = sequelize.define("user", {
 
-<<<<<<< HEAD
-    name: DataTypes.STRING,
-    city: DataTypes.STRING,
-    state: DataTypes.STRING,
-    avatar: DataTypes.TEXT,
-    score: DataTypes.INTEGER
+//     name: DataTypes.STRING,
+//     city: DataTypes.STRING,
+//     state: DataTypes.STRING,
+//     avatar: DataTypes.TEXT,
+//     score: DataTypes.INTEGER
 
-  });
-  return User;
-};
+//   });
+//   return User;
+// };
 
 //   User.sync({force: true}).then(() => {
 //   // Table created
@@ -22,7 +21,7 @@ module.exports = function(sequelize, DataTypes) {
 //     score:"",
 
 //   })
-=======
+
   id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -63,7 +62,5 @@ module.exports = function(sequelize, DataTypes) {
 });
 
   return User;
->>>>>>> e2f1a7ba28524f8a90f04f76812d4fe2218d8e50
 
-// });
-
+};
