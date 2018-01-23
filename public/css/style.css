@@ -14,9 +14,16 @@ h1 {
 
 }
 
-main {
+#content {
 
-    font-family: font 'Indie Flower', cursive;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 25px;
+}
+
+article {
+
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
 }
 
 nav {
@@ -46,7 +53,9 @@ nav {
 #gameButton {
     height: 50px;
     width: 200px;
-    background-color: #B62482
+    background-color: #B62482;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    
 }
 
 #inputName {
@@ -54,6 +63,8 @@ nav {
     border-color: #F35406;
     height: 50px;
     width: 950px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
 }
 
 #inputEmail {
@@ -61,24 +72,32 @@ nav {
     border-color: #F35406;
     height: 50px;
     width: 950px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
 }
 
 #inputCity {
     border-style: solid 2px;
     border-color: #F35406;
     height: 50px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
 }
 
 #inputState {
     border-style: solid 2px;
     border-color: #F35406;
     height: 50px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
 }
 
 #submitButton {
     height: 50px;
     width: 200px;
     background-color: #B62482
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
 }
 
 .menuButton {
@@ -93,7 +112,6 @@ nav {
     background-color: #F35406
     
 }
-
 
 }
 
@@ -247,22 +265,22 @@ nav {
 
 .carousel{
 	margin-left: 285px;
-	margin-top: -730px;
+	margin-top: -280px;
 	margin-right: -150px;
 	width: 590px;
     background-color: #FBFBFB;
-
-
-}
+ }
 
 .card-deck {
     margin-left: 910px;
-    margin-top: -730px;
-    width:350px;
+    margin-top: -270px;
+    width:200px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
 }
 
 .card-img-top {
-    width: 50px;
+    width: 40px;
 }
 
 .card-title {
@@ -288,38 +306,48 @@ nav {
 #Question1 {
     margin-left:295px;
     margin-top: -100px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
 }
 
 #Question2 {
     margin-left:295px;
     margin-top: -430px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
 
 }
 
 #Question3 {
     margin-left:295px;
     margin-top: -360px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
 
 }
 
 #Question4 {
     margin-left:295px;
-  margin-top: -290px;
+    margin-top: -290px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
 
 }
 
 #Question5 {
     margin-left:295px;
    margin-top: -220px;
+   font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
 
 }
 
 #footerCard {
     width: 590px;
-     margin-left:300px;
-      margin-top: -385px;
-      background-color: #FBFBFB;
-      height: 378px;
+    margin-left:300px;
+    margin-top: -490px;
+    background-color: #FBFBFB;
+      
 
 }
 
@@ -336,3 +364,32 @@ nav {
     width: 150px;
     margin-left:100px
 }
+
+.card-title {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
+
+}
+
+#Level1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
+
+}
+
+#Level2 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
+
+}
+
+#Level3 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
+
+}
+
+
+
+
+
