@@ -2,6 +2,7 @@
 var authController = require("../controller/authcontroller.js");
 
 module.exports = function(app, passport) {
+	console.log(passport);
  
     app.get('/signup', authController.signup);
  
@@ -15,6 +16,6 @@ module.exports = function(app, passport) {
             failureRedirect: '/signup'
         }))
 
-    app.get('/Game',authController.dashboard);
+    app.get('/Game',authController.Game);
  
 };

@@ -74,14 +74,13 @@ var path = require("path");
 
 // Syncing our user models and then starting our Express app
 // =============================================================
-var authRoute = require('./routes/auth-api-routes.js')(app);
-require('./app/routes/auth.js')(app);
+var authRoute = require('./routes/auth-api-routes.js')(app, passport);
 require("./routes/question-api-routes.js")(app);
 require("./routes/user-api-routes.js")(app);
 require("./routes/html-routes.js")(app);
-require("./app/models")(app);
-require('./app/config/passport/passport.js')(passport, models.user);
-require('./app/routes/auth.js')(app,passport);
+require("./models");
+require('./config/passport/passport.js')(passport, User);
+
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================

@@ -37,7 +37,8 @@ module.exports = function(passport, user) {
  
             User.findOne({
                 where: {
-                    email: email
+                    name: username,
+                    password: userPassword
                 }
             }).then(function(user) {
  
@@ -55,7 +56,7 @@ module.exports = function(passport, user) {
  
                     var userPassword = generateHash(password);
  
-                    var data =
+                    var userInfo =
  
                         {
                             name: req.body.name,
